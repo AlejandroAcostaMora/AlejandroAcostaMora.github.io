@@ -1,3 +1,86 @@
 header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    min-height: 10vh;
     background-color: $primaryColor;
+}
+
+header ul{
+    position: absolute;
+    right: 0px;
+    top: 10vh;
+    width: 100%;
+    background-color: $primaryColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 0px;
+    overflow: hidden;
+}
+
+header li{
+    list-style: none;
+}
+
+.menuHamburguesa input{
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+    cursor: pointer;
+}
+
+.menuHamburguesa div{
+    width: 18px;
+    height: 2px;
+    background-color: brown;
+    margin-bottom: 3px;
+}
+
+.menuHamburguesa input[type="checkbox"]:checked ~ ul{
+    height: 23vh;
+}
+
+.menuHamburguesa input:checked ~ .linea1{
+    transform-origin: 100%;
+    transform: rotate(-45deg) translate(-1px, -3px) 
+}
+
+.menuHamburguesa input:checked ~ .linea2{
+    transform: rotate(45deg);
+}
+
+.menuHamburguesa input:checked ~ .linea3{
+    opacity: 0;
+}
+
+/* menu en línea para desktop*/
+@media screen and (min-width: 680px){
+
+    .menuHamburguesa input, .menuHamburguesa div{
+        display: none;
+    }
+
+    .menuHamburguesa{
+        width: 500px;
+    }
+
+    header ul{
+        position: relative;
+        top: 0;
+        background: unset;
+        height: unset;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    header ul li{
+        margin-right: 30px;
+    }
+
 }
