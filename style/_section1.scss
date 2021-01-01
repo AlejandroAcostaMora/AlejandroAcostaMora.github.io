@@ -1,0 +1,62 @@
+.section1{
+    padding-top: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+#helloWorld{
+    width: 90%;
+
+}
+
+.section1 h1{
+    color: $colorTexto;
+    font-size: 3em;
+    font-family: $fuentePlexSans;
+}
+
+#world{
+    text-decoration: line-through;
+}
+
+#dot{
+    color: $colorFondos;
+}
+
+.section1 p{
+    font-family: $fuentePlexMono;
+    font-size: 16px;
+}
+
+#buttonConoce{
+    margin-top: 40px;
+    width: 100%;
+    height: 48px;
+    background-color: $colorBotones;
+    text-align: center;
+    line-height: 48px;
+    font-family: $fuentePlexMono;
+    font-weight: bold;
+    color: $colorTexto;
+}
+
+/* Section1 para desktop*/
+@media screen and (min-width: 520px){
+
+    .section1{
+        padding-top: 50px;
+        padding-left: 50px;
+    }
+    
+    .section1 h1{
+        font-size: 3.5em;
+    }
+
+    .section1 p{
+        width: 550px;
+    }
+
+    #buttonConoce{
+        width: 226px;
+    }
+}

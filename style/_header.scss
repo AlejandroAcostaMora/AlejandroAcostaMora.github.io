@@ -4,15 +4,14 @@ header{
     align-items: center;
     padding: 0px 20px;
     min-height: 10vh;
-    background-color: $primaryColor;
 }
 
 header ul{
     position: absolute;
-    right: 0px;
+    left: 0px;
     top: 10vh;
     width: 100%;
-    background-color: $primaryColor;
+    background-color: $colorFondos;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -23,6 +22,14 @@ header ul{
 
 header li{
     list-style: none;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    font-family: $fuentePlexMono;
+    font-size: 14px;
 }
 
 .menuHamburguesa input{
@@ -36,13 +43,13 @@ header li{
 
 .menuHamburguesa div{
     width: 18px;
-    height: 2px;
+    height: 1.9px;
     background-color: brown;
     margin-bottom: 3px;
 }
 
 .menuHamburguesa input[type="checkbox"]:checked ~ ul{
-    height: 23vh;
+    height: 40vh;
 }
 
 .menuHamburguesa input:checked ~ .linea1{
@@ -59,14 +66,15 @@ header li{
 }
 
 /* menu en línea para desktop*/
-@media screen and (min-width: 680px){
+@media screen and (min-width: 520px){
 
     .menuHamburguesa input, .menuHamburguesa div{
         display: none;
     }
 
     .menuHamburguesa{
-        width: 500px;
+        width: 400px;
+        margin-right: 50px;
     }
 
     header ul{
@@ -77,10 +85,10 @@ header li{
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
+        margin-right: 20px;
     }
 
-    header ul li{
-        margin-right: 30px;
+    header a{
+        color: $colorTexto;
     }
-
 }
