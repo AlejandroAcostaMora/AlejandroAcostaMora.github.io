@@ -35,10 +35,6 @@ header ul {
   overflow: hidden;
 }
 
-header li {
-  list-style: none;
-}
-
 header a {
   text-decoration: none;
   color: white;
@@ -85,6 +81,9 @@ header a {
 
 /* menu en línea para desktop*/
 @media screen and (min-width: 520px) {
+  .contenedorLogo {
+    padding-left: 30px;
+  }
   .menuHamburguesa input, .menuHamburguesa div {
     display: none;
   }
@@ -158,7 +157,7 @@ header a {
 @media screen and (min-width: 520px) {
   .section1 {
     padding-top: 50px;
-    padding-left: 50px;
+    padding-left: 60px;
   }
   .section1 h1 {
     font-size: 3.5em;
@@ -171,10 +170,115 @@ header a {
   }
 }
 
+.episodios {
+  padding-top: 20px;
+}
+
+.fondoAzul {
+  width: 100%;
+  height: 1300px;
+  background: #0000EC;
+  -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+          clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+  z-index: -1;
+  position: absolute;
+}
+
+.contenidoEpisodios {
+  width: 90%;
+  margin: auto;
+  padding-top: 100px;
+}
+
+#h2Episodios {
+  color: white;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 2em;
+  font-weight: 200;
+}
+
+.contenedorPodcast ul {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedorPodcast ul li {
+  padding-bottom: 5px;
+}
+
+.dondeVenimos img {
+  height: 600px;
+  width: auto;
+  padding-bottom: 30px;
+}
+
+.dondeVenimos h2 {
+  color: #060A24;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 2em;
+  font-weight: 200;
+  padding-bottom: 20px;
+}
+
+.dondeVenimos p {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  color: #060A24;
+}
+
+/* Section Episodios para desktop*/
+@media screen and (min-width: 520px) {
+  .fondoAzul {
+    height: 750px;
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+            clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+  }
+  #h2Episodios {
+    padding-top: 20px;
+    padding-left: 60px;
+  }
+  .contenedorPodcast ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .contenedorPodcast ul li {
+    padding-right: 30px;
+  }
+  .podcast {
+    width: 50%;
+  }
+  .dondeVenimos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .contenedorTextoDondeVenimos {
+    max-width: 460px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  list-style: none;
 }
 /*# sourceMappingURL=style.css.map */

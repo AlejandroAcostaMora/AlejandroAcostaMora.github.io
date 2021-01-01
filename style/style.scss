@@ -1,11 +1,12 @@
 @import "./variables";
 @import "./header";
 @import "./section1";
-
+@import "./Episodios";
 
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }

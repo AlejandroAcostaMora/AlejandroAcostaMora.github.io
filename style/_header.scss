@@ -20,10 +20,6 @@ header ul{
     overflow: hidden;
 }
 
-header li{
-    list-style: none;
-}
-
 header a{
     text-decoration: none;
     color: white;
@@ -67,6 +63,10 @@ header a{
 
 /* menu en línea para desktop*/
 @media screen and (min-width: 520px){
+
+    .contenedorLogo{
+        padding-left: 30px;
+    }
 
     .menuHamburguesa input, .menuHamburguesa div{
         display: none;

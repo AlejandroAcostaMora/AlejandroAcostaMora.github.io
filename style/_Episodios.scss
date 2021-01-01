@@ -1,0 +1,93 @@
+.episodios{
+    padding-top: 20px;
+}
+
+.fondoAzul{
+    width: 100%;
+    height: 1300px;
+    background: $colorFondos;
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+    z-index: -1;
+    position: absolute;
+}
+
+.contenidoEpisodios{
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+#h2Episodios{
+    color: white;
+    font-family: $fuentePlexSans;
+    font-size: 2em;
+    font-weight: 200;
+}
+
+.contenedorPodcast ul{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    li{
+        padding-bottom: 5px;
+    }
+}
+
+.dondeVenimos img{
+    height: 600px;
+    width: auto;
+    padding-bottom: 30px;
+}
+
+.dondeVenimos h2{
+    color: $colorTexto;
+    font-family: $fuentePlexSans;
+    font-size: 2em;
+    font-weight: 200;
+    padding-bottom: 20px;
+}
+
+.dondeVenimos p{
+    font-family: $fuentePlexMono;
+    font-size: 16px;
+    color: $colorTexto;
+}
+
+/* Section Episodios para desktop*/
+@media screen and (min-width: 520px){
+
+    .fondoAzul{
+        height: 750px;
+        clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+    }
+
+    #h2Episodios{
+        padding-top: 20px;
+        padding-left: 60px;
+    }
+
+    .contenedorPodcast ul{
+        flex-flow: row wrap;
+
+        li{
+            padding-right: 30px;
+        }
+}
+.podcast{
+    width: 50%;
+}
+
+.dondeVenimos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedorTextoDondeVenimos{
+    max-width: 460px;
+    align-self: center;
+}
+
+}
