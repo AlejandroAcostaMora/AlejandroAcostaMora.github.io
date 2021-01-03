@@ -1,0 +1,34 @@
+.invitados{
+    padding-top: 40px; 
+    width: 100%;
+}
+
+
+.invitados h2{
+    color: $colorTexto;
+    font-family: $fuentePlexSans;
+    font-size: 2em;
+    font-weight: 200;
+    margin-left: 5%;
+    padding-bottom: 20px;
+}
+
+.invitados img{
+    width: 100%;
+    height: auto;
+}
+
+/* Section Invitados para desktop*/
+@media screen and (min-width: 520px){
+
+    .invitados ul{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .invitados li{
+        width: 33%;
+    }
+
+
+}

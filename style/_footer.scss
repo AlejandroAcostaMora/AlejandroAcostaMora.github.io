@@ -1,0 +1,56 @@
+footer{
+    min-height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.copyright{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    font-family: $fuentePlexMono;
+    color: $colorTexto;
+}
+
+.social{
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.social ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Footer para desktop*/
+@media screen and (min-width: 520px){
+
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 70px;
+        padding-right: 50px;
+        min-height: 13vh;
+    }
+
+    .copyright{
+        padding: unset;
+    }
+
+    .social{
+        width: unset;
+        padding: unset;
+    }
+
+    .social ul{
+        justify-content: flex-end;
+        align-items: center;
+        
+        li{
+            padding-right: 35px;
+        }
+    }
+}

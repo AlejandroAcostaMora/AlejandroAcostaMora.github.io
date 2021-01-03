@@ -1,0 +1,99 @@
+.temas h2{
+    padding-top: 50px;
+    color: $colorTexto;
+    font-family: $fuentePlexSans;
+    font-size: 2em;
+    font-weight: 200;
+    margin-left: 5%;
+    padding-bottom: 20px;
+}
+
+.contenedorTemas{
+    padding-top: 30px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.contenedorTema{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+
+    span{
+    padding-top: 20px;
+    font-family: $fuentePlexMono;
+    font-size: 24px;
+    color: $colorTexto;
+    font-weight: bold;
+    text-align: center;
+    }
+}
+
+.fondoAzul2{
+    width: 100%;
+    height: 400px;
+    background: $colorFondos;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    z-index: -1;
+    position: absolute;
+}
+
+.novedades{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.novedades h2{
+    align-self: center;
+    color: white;
+    font-family: $fuentePlexSans;
+    font-size: 2.5em;
+    font-weight: 200;
+    text-align: center;
+}
+
+.novedades p{
+    margin-top: 20px;
+    align-self: center;
+    width: 90%;
+    height: 48px;
+    background-color: $colorBotones;
+    text-align: center;
+    line-height: 48px;
+    font-family: $fuentePlexMono;
+    font-weight: bold;
+    color: $colorTexto;
+}
+
+/* Section Temas para desktop*/
+@media screen and (min-width: 520px){
+
+    .contenedorTemas{
+        flex-direction: row;
+    }    
+
+    .contenedorTema{
+        padding-right: 30px;
+        padding-bottom: 0px;
+    }
+
+    .fondoAzul2{
+        clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+        height: 500px;
+    }
+
+    .novedades{
+        height: 500px;
+    }
+
+    .novedades p{
+        width: 545px;
+    }
+}
