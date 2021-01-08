@@ -38,6 +38,12 @@
     font-family: $fuentePlexMono;
     font-weight: bold;
     color: $colorTexto;
+    cursor: pointer;
+}
+
+#buttonConoce:hover{
+    background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: white;
 }
 
 /* Section1 para desktop*/
@@ -53,7 +59,7 @@
     }
 
     .section1 p{
-        width: 550px;
+        max-width: 550px;
     }
 
     #buttonConoce{

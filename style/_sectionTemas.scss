@@ -1,10 +1,11 @@
 .temas h2{
-    padding-top: 50px;
+    padding-top: 35px;
     color: $colorTexto;
     font-family: $fuentePlexSans;
     font-size: 2em;
     font-weight: 200;
     margin-left: 5%;
+    margin-right: 5%;
     padding-bottom: 20px;
 }
 
@@ -77,11 +78,16 @@
 
     .contenedorTemas{
         flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 0px;
+        justify-content: space-around;
     }    
 
     .contenedorTema{
         padding-right: 30px;
-        padding-bottom: 0px;
+        padding-bottom: 50px;
+        max-width: 220px;
+
     }
 
     .fondoAzul2{

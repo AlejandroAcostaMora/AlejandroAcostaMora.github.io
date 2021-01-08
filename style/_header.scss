@@ -91,4 +91,14 @@ header a{
     header a{
         color: $colorTexto;
     }
+
+    header a:hover{
+        color: $colorBotones;
+        text-decoration: line-through;
+    }
+
+    header a:active{
+        color: #060A24;
+        text-decoration: line-through;
+    }
 }

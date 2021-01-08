@@ -110,6 +110,14 @@ header a {
   header a {
     color: #060A24;
   }
+  header a:hover {
+    color: #00F3BB;
+    text-decoration: line-through;
+  }
+  header a:active {
+    color: #060A24;
+    text-decoration: line-through;
+  }
 }
 
 .section1 {
@@ -151,6 +159,12 @@ header a {
   font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
   color: #060A24;
+  cursor: pointer;
+}
+
+#buttonConoce:hover {
+  background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: white;
 }
 
 /* Section1 para desktop*/
@@ -163,7 +177,7 @@ header a {
     font-size: 3.5em;
   }
   .section1 p {
-    width: 550px;
+    max-width: 550px;
   }
   #buttonConoce {
     width: 226px;
@@ -220,8 +234,8 @@ header a {
 }
 
 .dondeVenimos img {
-  height: 600px;
-  width: auto;
+  max-height: 600px;
+  max-width: 100%;
   padding-bottom: 30px;
 }
 
@@ -314,12 +328,13 @@ header a {
 }
 
 .temas h2 {
-  padding-top: 50px;
+  padding-top: 35px;
   color: #060A24;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 2em;
   font-weight: 200;
   margin-left: 5%;
+  margin-right: 5%;
   padding-bottom: 20px;
 }
 
@@ -418,10 +433,16 @@ header a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 0px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .contenedorTema {
     padding-right: 30px;
-    padding-bottom: 0px;
+    padding-bottom: 50px;
+    max-width: 220px;
   }
   .fondoAzul2 {
     -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
@@ -516,5 +537,6 @@ footer {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   list-style: none;
+  scroll-behavior: smooth;
 }
 /*# sourceMappingURL=style.css.map */
