@@ -35,6 +35,11 @@
     li{
         padding-bottom: 3px;
     }
+
+    li iframe{
+        border: none;
+        width: 100%;
+    }
 }
 
 .dondeVenimos img{

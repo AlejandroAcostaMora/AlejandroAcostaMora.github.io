@@ -68,9 +68,16 @@
     background-color: $colorBotones;
     text-align: center;
     line-height: 48px;
+
+    a{
     font-family: $fuentePlexMono;
     font-weight: bold;
     color: $colorTexto;
+    }
+}
+
+.novedades p a:hover{
+        color: white;
 }
 
 /* Section Temas para desktop*/

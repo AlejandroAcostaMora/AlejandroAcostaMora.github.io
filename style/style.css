@@ -156,14 +156,20 @@ header a {
   background-color: #00F3BB;
   text-align: center;
   line-height: 48px;
+  cursor: pointer;
+}
+
+#buttonConoce a {
   font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
   color: #060A24;
-  cursor: pointer;
 }
 
 #buttonConoce:hover {
   background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
+
+#buttonConoce:hover a {
   color: white;
 }
 
@@ -231,6 +237,11 @@ header a {
 
 .contenedorPodcast ul li {
   padding-bottom: 3px;
+}
+
+.contenedorPodcast ul li iframe {
+  border: none;
+  width: 100%;
 }
 
 .dondeVenimos img {
@@ -421,9 +432,16 @@ header a {
   background-color: #00F3BB;
   text-align: center;
   line-height: 48px;
+}
+
+.novedades p a {
   font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
   color: #060A24;
+}
+
+.novedades p a:hover {
+  color: white;
 }
 
 /* Section Temas para desktop*/
@@ -492,6 +510,10 @@ footer {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.social ul li a {
+  color: inherit;
 }
 
 /* Footer para desktop*/

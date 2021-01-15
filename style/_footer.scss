@@ -22,6 +22,10 @@ footer{
 .social ul{
     display: flex;
     justify-content: space-around;
+
+    li a{
+        color: inherit;
+    }
 }
 
 /* Footer para desktop*/
